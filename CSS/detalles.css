@@ -1,0 +1,301 @@
+html, body {
+    margin: 0px;
+    background-color: #F1F7F8;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    display: flex;
+    min-height: 70px;
+    /*background-color: gradient-linear;*/
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#78CAD9), to(#0296AD));
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*border-bottom: #000 solid;*/
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 50px;
+    margin-right: 40px;
+}
+
+#footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  /*text-shadow: 0px 1px 0px #fff;*/
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0296AD), to(#78CAD9));
+  margin-inline-end: 0px;
+}
+
+#footer h5{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+/*BUSCADOR*/
+.flexsearch--wrapper {
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	overflow: hidden;
+	background: transparent;
+	margin: 0;
+	position: static;
+}
+	
+.flexsearch--form {
+	overflow: hidden;
+	position: relative;
+}
+	
+.flexsearch--input-wrapper {
+	padding: 0 66px 0 0; /* Right padding for submit button width */
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+.flexsearch {
+  padding: 0 25px 0 200px; /* Padding for other horizontal elements */
+}
+/*
+ADVERTENCIA!!!!
+MODIFICAR BUSCADOR
+*/
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+ 	height: 60px;
+  padding: 0 46px 0 10px;
+	border-color: #888;
+  border-radius: 35px; /* (height/2) + border-width */
+  border-style: solid;
+	border-width: 5px;
+  
+  color: #333;
+  font-family: 'Helvetica', sans-serif;
+	font-size: 26px;
+	
+}
+
+.contenido {
+  display: flex;
+  margin: 20px;
+  
+}
+
+/*INFO EMPRESA DATOS*/
+.infoEmpresa{
+  margin: 60px;
+  font-size: 22px;
+  border: solid 2px #0296AD;
+  padding: 10px;
+  text-align: center;
+}
+.infoEmpresa h2{
+  font-size: 42px;
+  color: black;
+  padding: 10px;
+  position: relative;
+  background-color: transparent;
+  text-shadow: 1px 2px #999;
+}
+/*INFO EMPRESA DATOS*/
+
+.lista {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.bloques {
+  background-color: #78CAD9;
+ /*display: flex;*/
+ /* align-items: center;*/
+  padding: 40px;
+  position: relative;
+  border: 3px solid rgb(36, 44, 54);
+  border-radius: 30px;
+  /*margin: 3.57143%;*/
+
+  width: 20%;
+    height: auto;
+    display: inline-block;
+    margin: 0.2%;
+}
+
+.bloques p {
+  font-size: 10px;
+  color: black;
+  padding: 10px;
+}
+.bloques img{
+  width: 50px;
+  height: auto;
+}
+.bloques h3{
+  background: transparent;
+  font-size: 16px;
+}
+
+.flexsearch--submit {
+  position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 60px;
+	height: 60px;
+  padding: 0;
+  border: none;
+	margin-top: 8px; /* margin-top + border-width */
+  margin-right: 5px; /* border-width */
+	background: transparent;
+  color: #888;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #333; 
+}
+
+.flexsearch--submit:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #888;  
+}
+
+input:-moz-placeholder {
+  color: #888
+}
+aside {
+  /*background: -moz-linear-gradient(top, #C3E9F2, #cacad9);
+  background: -webkit-linear-gradient(top, #b9b9cb, #cacad9);*/
+  background-color: #C3E9F2;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  vertical-align: top;
+  width: 15%;
+
+}
+
+h2 {
+  background: #fff;
+  color: #383838;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+h4 {
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.recomendaciones{
+  background-color: #C3E9F2;
+  position: relative;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  vertical-align: top;
+  width: 15%;
+  padding: 20px;
+  border:  3px solid rgb(36, 44, 54);
+}
+
+#contenItemsCarrusel{
+  border: 5px solid black; 
+  height: 200%;
+  overflow: hidden;
+}
+
+.itemCarrucel{
+  border: 1px solid black;
+  height: 200px;
+  position: relative;
+}
+.tarjetaCarrucel{
+  background-color: rgb(8, 73, 153);
+  height: 100%;
+}
+.flechaCarrucel{
+  background-color: rgb(112, 223, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#tarjetaCarrusel-1{
+  background-color: magenta;
+}
+#tarjetaCarrusel-2{
+  background-color: rgb(56, 6, 56);
+}
+#tarjetaCarrusel-3{
+  background-color: rgb(0, 60, 255);
+}
+
+.titulo {
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.subtitulo {
+  margin: 0;
+  color: #000;
+  display: inline;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sabor { 
+  color: #fff;
+  margin: 7px 0;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+}
+
+.linea-division {
+  width: 80%;
+  height: 2px;
+  background-color: #36221c;
+}
